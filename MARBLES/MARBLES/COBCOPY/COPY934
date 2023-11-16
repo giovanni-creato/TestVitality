@@ -1,0 +1,15 @@
+       01  HEADER-RECORD.                                               00000100
+      *********************************                                 00000200
+      * ADDING A COMMENT LINE                                           00000300
+      *********************************                                 00000400
+           02 FILLER                 PIC X(43).                         00000500
+           02 REPORT-TITLE           PIC X(36).                         00000600
+           02 FILLER                 PIC X(29).                         00000700
+           02 REPORT-NEWFIELD        PIC X(25).                         00000800
+           02 FILLER                 PIC X(29).                         00000900
+           02 REPORT-TOTALS          PIC X(14)                          00001000
+                    VALUE '$*$ TOTALS $*$'.                             00001100
+           02 FILLER                 PIC X(4) VALUE 'PAGE'.             00001200
+           02 FILLER                 PIC X.                             00001300
+           02 FILLER                 PIC X(2).                          00001400
+           02 PAGE-NUMBER            PIC 9(4).                          00001500
