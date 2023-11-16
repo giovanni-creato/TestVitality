@@ -1,0 +1,5 @@
+//BERBE02A  JOB '108200000',BERIAU,CLASS=A,MSGCLASS=X,                          
+//      MSGLEVEL=(1,1),NOTIFY=ASE926,TYPRUN=SCAN                                
+//TESTIEF   EXEC PGM=IEFBR14                                                    
+//*                                                                             
+//*                                                                             
