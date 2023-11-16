@@ -1,0 +1,40 @@
+{
+  "elements" : {
+    "@DEFAULT" : {
+      "processorGroup" : "OPTIONS"
+    },
+    "COBOL000" : {
+      "processorGroup" : "OPTIONS"
+    },
+    "COBOL904" : {
+      "processorGroup" : "OPTIONS"
+    },
+    "COBOL906" : {
+      "processorGroup" : "OPTIONS"
+    },
+    "COBOL907" : {
+      "processorGroup" : "OPTIONS"
+    },
+    "COBOL908" : {
+      "processorGroup" : "OPTIONS"
+    },
+    "COBOL924" : {
+      "processorGroup" : "OPTIONS"
+    },
+    "COBOL938" : {
+      "processorGroup" : "OPTIONS"
+    },
+    "COBOL947" : {
+      "processorGroup" : "OPTIONS"
+    },
+    "GROUP906" : {
+      "processorGroup" : "OPTIONS"
+    }
+  },
+  "defaultProcessorGroup" : "OPTIONS",
+  "definedProcessorGroups" : [ {
+    "name" : "OPTIONS",
+    "description" : "ELEMENT PROCESSING OPTIONS"
+  } ],
+  "fileExtension" : ""
+}

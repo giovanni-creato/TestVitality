@@ -1,0 +1,88 @@
+{
+  "elements" : {
+    "COPY000" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "COPY904" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "COPY906" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "COPY907" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "COPY908" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "COPY924" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "COPY934" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "COPY938" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "COPY939" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "COXY924" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FAPHDR" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FAPPAGE" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FARINCL" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FINAPC01" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FINAPC02" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FINARC01" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FINARC02" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FOOTER" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "HEADER1" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "HEADER99" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "HEADRER1" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "MEMBER1" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "PAGEHDR" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "PAGING" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "TITLE1" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "TITLE2" : {
+      "processorGroup" : "*NOPROC*"
+    }
+  },
+  "defaultProcessorGroup" : "*NOPROC*",
+  "definedProcessorGroups" : [ {
+    "name" : "*NOPROC*",
+    "description" : "REVERSE DELTA PROCESSOR'S"
+  } ],
+  "fileExtension" : ""
+}

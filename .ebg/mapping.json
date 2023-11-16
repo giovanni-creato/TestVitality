@@ -1,0 +1,36 @@
+{
+  "version" : 4,
+  "url" : "https://10.0.0.1:6443",
+  "git" : {
+    "context" : "giovanni-creato",
+    "repository" : "TestVitality",
+    "cloneUrl" : "https://github.com/giovanni-creato/TestVitality.git",
+    "branch" : "main"
+  },
+  "endevor" : {
+    "connection" : "TSO9",
+    "baseUrl" : "http://172.29.11.9:40050/EndevorService/rest",
+    "configuration" : "WEBSNDVR"
+  },
+  "branches" : [ {
+    "name" : "main",
+    "environment" : "DEV",
+    "stageNumber" : 1,
+    "systems" : [ {
+      "name" : "MARBLES",
+      "alias" : null,
+      "subsystems" : [ {
+        "name" : "MARBLES",
+        "alias" : null,
+        "filter" : {
+          "elements" : [ ],
+          "types" : [ "COBCOPY", "COBOL", "COPY", "JCL", "OPTIONS" ]
+        }
+      } ],
+      "filter" : null
+    } ],
+    "mappingMode" : "FULL",
+    "readOnly" : false,
+    "synchronizeListings" : false
+  } ]
+}

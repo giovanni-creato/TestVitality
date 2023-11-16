@@ -1,0 +1,9 @@
+{
+  "elements" : { },
+  "defaultProcessorGroup" : "*NOPROC*",
+  "definedProcessorGroups" : [ {
+    "name" : "*NOPROC*",
+    "description" : "COBOL COPYBOOK NO PROCESSING"
+  } ],
+  "fileExtension" : ""
+}

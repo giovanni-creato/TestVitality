@@ -1,0 +1,51 @@
+//BERBE02I JOB (108200000),'ASM PROGRAMS',CLASS=B,NOTIFY=&SYSUID,       00000200
+//  REGION=4096K,TIME=1440,MSGCLASS=X                                   00000300
+//ASMPGM   PROC MEMBER=                                                 00000400
+//*******************************************************************   00000500
+//**    ASSEMBLE THE ELEMENT                                       **   00000600
+//*******************************************************************   00000700
+//**                                                                    00000800
+//ASM      EXEC PGM=ASMA90,                                             00000900
+//             PARM='NODECK,OBJECT,NOTERM,XREF(SHORT)'                  00001000
+//SYSLIB   DD  DSN=SYS1.MACLIB,DISP=SHR                                 00001100
+//         DD  DSN=CAIEDUC.NDVR.V180GA.CSIQOPTN,DISP=SHR                00001200
+//SYSIN    DD  DSN=CAIEDUC.NDVR.ASMPGM(&MEMBER),DISP=SHR                00001300
+//SYSLIN   DD  DSN=&&SYSLIN,DISP=(,PASS,DELETE),                        00001400
+//             UNIT=SYSDA,SPACE=(TRK,(3,5),RLSE),                       00001500
+//             DCB=(RECFM=FB,LRECL=80,DSORG=PS,BLKSIZE=3120)            00001600
+//SYSPUNCH DD  DUMMY                                                    00001700
+//SYSPRINT  DD SYSOUT=*                                                 00001800
+//SYSUT1   DD  UNIT=SYSDA,SPACE=(CYL,(20))                              00001900
+//SYSUT2   DD  UNIT=SYSDA,SPACE=(CYL,(20))                              00002000
+//SYSUT3   DD  UNIT=SYSDA,SPACE=(CYL,(20))                              00002100
+//*                                                                     00002200
+//*===================================================================  00002300
+//*        COPY OBJECT TO .OBJLIB DATA SET                              00002400
+//*===================================================================  00002500
+//OBJCOPY  EXEC PGM=IEBGENER                                            00002600
+//SYSPRINT DD   DUMMY                                                   00002700
+//SYSUT1   DD   DSN=&&SYSLIN,DISP=(OLD,DELETE)                          00002800
+//SYSUT2   DD   DISP=SHR,DSN=CAIEDUC.NDVR.OBJLIB(&MEMBER)               00002900
+//SYSIN    DD   DUMMY                                                   00003000
+//*******************************************************************   00003100
+//*         EXEC LINKEDIT                                               00003200
+//*******************************************************************   00003300
+//LINK     EXEC PGM=IEWL,COND=(16,LT),                                  00003400
+//         PARM='LIST,XREF,SIZE(768K,48K)'                              00003500
+//*       PARM='AMODE=ANY,RMODE=24,LIST,XREF,SIZE(768K,48K)'            00003600
+//SYSLIB   DD  DSN=CAIEDUC.NDVR.V180GA.CSIQOPTN,DISP=SHR                00003700
+//         DD  DSN=SYS1.MACLIB,DISP=SHR                                 00003800
+//OBJLIB   DD  DISP=SHR,DSN=CAIEDUC.NDVR.OBJLIB(&MEMBER)                00003900
+//INCLIB   DD  DISP=SHR,DSN=CAIEDUC.NDVR.LNKLIB                         00004000
+//SYSPRINT DD  SYSOUT=*                                                 00004100
+//SYSUT1   DD  UNIT=SYSDA,SPACE=(CYL,(5,3))                             00004200
+//SYSLMOD  DD DSN=CAIEDUC.NDVR.LOADLIB(&MEMBER),DISP=SHR                00004300
+//SYSLIN   DD *                                                         00004400
+  INCLUDE OBJLIB(LSTEPLIB)                                              00004500
+  ENTRY LSTEPLIB                                                        00004600
+  SETOPT PARM(AC=1,REUS(RENT))                                          00004700
+  NAME LSTEPLIB(R)                                                      00004800
+//*                                                                     00004900
+//*******************************************************************   00005000
+// PEND                                                                 00005100
+//STEP7 EXEC ASMPGM,MEMBER=LSTEPLIB                                     00005200

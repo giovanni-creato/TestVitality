@@ -1,0 +1,25 @@
+{
+  "elements" : {
+    "$LISTZ" : {
+      "processorGroup" : "JCL"
+    },
+    "ASMLINK" : {
+      "processorGroup" : "JCL"
+    },
+    "ASMTEST" : {
+      "processorGroup" : "JCL"
+    },
+    "BR14" : {
+      "processorGroup" : "JCL"
+    }
+  },
+  "defaultProcessorGroup" : "JCL",
+  "definedProcessorGroups" : [ {
+    "name" : "JCL",
+    "description" : "REVERSE DELTA PROCESSOR'S"
+  }, {
+    "name" : "TESTING",
+    "description" : "JCL USED FOR AUTOMATED TESTING"
+  } ],
+  "fileExtension" : ""
+}

@@ -1,0 +1,15 @@
+* Default Processor Options                                                     
+*    Options for Assembler                                                      
+ASMA90='RENT,TERM,XREF(SHORT),USING(MAP,WARN(13)),LIST(133),'                   
+*    Options for COBOL                                                          
+PBLHPC='HOST(ASM) VERSION(CAD115) DATE(ISO) TIME(ISO)'                          
+DSNHPC='CCSID(500),APOST,APOSTSQL,SOURCE'                                       
+Compiler = 'NewVersion'                                                         
+IGYCRCTL ='OBJECT,APOST,AWO,DATA(31),FASTSRT,LIB,FLAG(W),'+                     
+          'LIST,RENT,TRUNC(BIN),'+                                              
+          'NODBCS,SOURCE,MAP,NOSEQ,XREF,NONUMBER,LIST'                          
+*    Options for C++                                                            
+CCNDRVR='SOURCE,SHOWINC,LIST,OPT,AGG,XR,LO,ARCH(3),'                            
+*    Options for all languages                                                  
+IEWL='LIST,MAP,RENT,REUS,NOLET,XREF,SIZE=(256K,64K),'                           
+*                                                                               

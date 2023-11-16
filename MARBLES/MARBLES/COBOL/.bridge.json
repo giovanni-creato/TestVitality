@@ -1,0 +1,280 @@
+{
+  "elements" : {
+    "COBOL000" : {
+      "processorGroup" : "GROUP904"
+    },
+    "COBOL904" : {
+      "processorGroup" : "GROUP904"
+    },
+    "COBOL906" : {
+      "processorGroup" : "GROUP906"
+    },
+    "COBOL907" : {
+      "processorGroup" : "GROUP907"
+    },
+    "COBOL908" : {
+      "processorGroup" : "GROUP908"
+    },
+    "COBOL924" : {
+      "processorGroup" : "GROUP924"
+    },
+    "COBOL938" : {
+      "processorGroup" : "GROUP904"
+    },
+    "COBOL939" : {
+      "processorGroup" : "GROUP939"
+    },
+    "COBOL947" : {
+      "processorGroup" : "GROUP947"
+    },
+    "FAPASM01" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FAPASM02" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FAPCOB01" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FAPCOB02" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FARCOB01" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FARSUB02" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FINAPP01" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FINAPP02" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FINAPS01" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FINAPS02" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FINAPS03" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FINAPS04" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FINARP01" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FINARP02" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FINARP03" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FINARP05" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FINARS02" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FINARS03" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FINARS04" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "FOOTERR" : {
+      "processorGroup" : "*NOPROC*"
+    },
+    "HELOWRL1" : {
+      "processorGroup" : "MARBLES"
+    },
+    "HELOWRL2" : {
+      "processorGroup" : "MARBLES"
+    },
+    "HELOWRLD" : {
+      "processorGroup" : "MARBLES"
+    },
+    "MARBLE00" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE01" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE02" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE03" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE04" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE05" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE06" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE07" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE08" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE09" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE10" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE11" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE12" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE13" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE14" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE15" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE16" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE17" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE18" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE19" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE20" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE21" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE22" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE23" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE24" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE25" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE26" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE27" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE28" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE29" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLE30" : {
+      "processorGroup" : "LEMC2"
+    },
+    "MARBLES" : {
+      "processorGroup" : "LEMC2"
+    },
+    "VALUECHK" : {
+      "processorGroup" : "*NOPROC*"
+    }
+  },
+  "defaultProcessorGroup" : "GROUP918",
+  "definedProcessorGroups" : [ {
+    "name" : "*NOPROC*",
+    "description" : "REVERSE DELTA PROCESSOR'S"
+  }, {
+    "name" : "BATCH",
+    "description" : "COBOL COMPILE AND LINK FOR BATCH"
+  }, {
+    "name" : "BATCHDB2",
+    "description" : "COBOL COMPILE AND LINK"
+  }, {
+    "name" : "CICS#DB2",
+    "description" : "COBOL COMPILE AND LINK FOR CICS DB2"
+  }, {
+    "name" : "CLENBL",
+    "description" : "COBOL COMPILE AND LINK"
+  }, {
+    "name" : "DAVEBOTH",
+    "description" : ".AVE HARDING CICS & DB2 PROCESSOR GROUP"
+  }, {
+    "name" : "DAVECICS",
+    "description" : "DAVE HARDING CICS PROCESSOR GROUP"
+  }, {
+    "name" : "DAVEDB2",
+    "description" : "DAVE HARDING DB2 PROCESSOR GROUP"
+  }, {
+    "name" : "DAVEXXXX",
+    "description" : "DAVE HARDING BATCH ONLY"
+  }, {
+    "name" : "GROUP904",
+    "description" : "PROCESSOR FOR VITALITY TRAINING GEN904"
+  }, {
+    "name" : "GROUP906",
+    "description" : "VITALITY WEEK 3"
+  }, {
+    "name" : "GROUP907",
+    "description" : "COBOL VITALITY 907 PROCESSOR"
+  }, {
+    "name" : "GROUP908",
+    "description" : "NOTHERN BRANCH SPECIAL PG FOR COBOL"
+  }, {
+    "name" : "GROUP918",
+    "description" : "VITALITY WEEK 3"
+  }, {
+    "name" : "GROUP924",
+    "description" : "PROCESSOR FOR GEN924NK - COBOL LE"
+  }, {
+    "name" : "GROUP937",
+    "description" : "COBOL COMPILE AND LINK - COBOL LE"
+  }, {
+    "name" : "GROUP947",
+    "description" : "NEW PROCESSOR GROUP"
+  }, {
+    "name" : "KIMBOTH",
+    "description" : "KIM CICS& DB2 COBOL COMPILE AND LINK"
+  }, {
+    "name" : "KIMCICS",
+    "description" : "KIM CICS COBOL COMPILE AND LINK"
+  }, {
+    "name" : "KIMDB2",
+    "description" : "KIM DB2 COBOL COMPILE AND LINK"
+  }, {
+    "name" : "KK918",
+    "description" : "COBOL COMPILE AND LINK - NEW COBOL"
+  }, {
+    "name" : "LAB21",
+    "description" : "VITALITY CLASS"
+  }, {
+    "name" : "LEMB2",
+    "description" : "COBOL COMPILE AND LINK"
+  }, {
+    "name" : "LEMC2",
+    "description" : "COBOL COMPILE AND LINK"
+  }, {
+    "name" : "LOAD",
+    "description" : "COBOL COMPILE AND LINK"
+  }, {
+    "name" : "MARBLES",
+    "description" : "COBOL COMPILE AND LINK"
+  } ],
+  "fileExtension" : "cbl"
+}

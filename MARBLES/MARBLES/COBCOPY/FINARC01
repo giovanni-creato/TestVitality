@@ -1,0 +1,7 @@
+        01 COPY1-BOOK.                                                          
+           05 COPY1-FIELDA           PICTURE X(03).                             
+           05 COPY1-FIELDB           PICTURE X(03).                             
+           05 COPY1-FIELDC           PICTURE X(03).                             
+           05 COPY1-FIELDD           PICTURE X(03).                             
+           05 FILLER                 PICTURE X(03).                             
+           05 COPY1-FIELDF           PICTURE X(03).                             
