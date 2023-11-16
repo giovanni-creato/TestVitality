@@ -12,6 +12,7 @@
       * NEW CHANGE VIT904                                                       
       * CHANGED IN SMPLTEST/T/FINANCE/ACCT901/COBOL HAVE A NICE DAY             
       * TEST VITALITY                                                           
+      * THIS CODE HAS BEEN MODIFIED IN ENDEVOR                                  
 000800 FILE SECTION.                                                            
        FD REPORT-FILE                                                           
            LABEL RECORDS ARE OMITTED                                            
