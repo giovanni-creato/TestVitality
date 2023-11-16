@@ -1,0 +1,25 @@
+//BERBE02A JOB (108200000),'SCM70RCM',CLASS=B,                                  
+//         MSGCLASS=X,NOTIFY=BERBE02,LINES=9999,TIME=1440                       
+//*                                                                             
+//*********************************************************************         
+//* MEMBER: $LISTZ                                                    *         
+//*********************************************************************         
+//LISTZ    EXEC PGM=GIMSMP,PARM='DATE=U',REGION=0M                              
+//SMPCSI    DD DISP=SHR,DSN=CAIEDUC.NDVR.V180GA.CSI                             
+//SMPLIST   DD DSN=CAIEDUC.NDVR.USER1.SMPLIST,DISP=(,CATLG,DELETE),             
+//             SPACE=(CYL,(1,1)),UNIT=SYSDA,                                    
+//             DCB=(DSORG=PS,LRECL=121,BLKSIZE=0,RECFM=FBA)                     
+//SMPCNTL   DD   *                                                              
+SET BOUNDARY(CAIT0).                                                            
+LIST SYSMODS PTFS.                                                              
+/*                                                                              
+//REPORT  EXEC PGM=IKJEFT01,DYNAMNBR=1500                                       
+//SYSPRINT DD  SYSOUT=*                                                         
+//SYSTSPRT DD  SYSOUT=*                                                         
+//SYSTSIN  DD  *                                                                
+  EX 'CAIEDUC.NDVR.CLIST(SMPLIST)'                                              
+/*                                                                              
+//                                                                              
+SET BOUNDARY(GLOBAL).                                                           
+LIST SYSMODS PTFS.                                                              
+/*                                                                              

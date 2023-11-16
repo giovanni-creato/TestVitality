@@ -1,0 +1,3 @@
+        01 COPY1-BOOK.                                                          
+           05 COPY1-FIELDA           PICTURE XXX.                               
+           05 COPY1-FIELDB           PICTURE XXX.                               
