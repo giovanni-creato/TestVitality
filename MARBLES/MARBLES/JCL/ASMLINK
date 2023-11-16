@@ -1,0 +1,51 @@
+//BERBE02I JOB (108200000),'ASM PROGRAMS',CLASS=B,NOTIFY=&SYSUID,       00000010
+//  REGION=4096K,TIME=1440,MSGCLASS=X                                   00000020
+//ASMPGM   PROC MEMBER=                                                         
+//*******************************************************************   00490001
+//**    ASSEMBLE THE ELEMENT                                       **   00510001
+//*******************************************************************   00530001
+//**                                                                    00540001
+//ASM      EXEC PGM=ASMA90,                                             00550001
+//             PARM='NODECK,OBJECT,NOTERM,XREF(SHORT)'                  00560001
+//SYSLIB   DD  DSN=SYS1.MACLIB,DISP=SHR                                         
+//         DD  DSN=CAIEDUC.NDVR.V180GA.CSIQOPTN,DISP=SHR                00580002
+//SYSIN    DD  DSN=CAIEDUC.NDVR.ASMPGM(&MEMBER),DISP=SHR                00600001
+//SYSLIN   DD  DSN=&&SYSLIN,DISP=(,PASS,DELETE),                        00610001
+//             UNIT=SYSDA,SPACE=(TRK,(3,5),RLSE),                       00620001
+//             DCB=(RECFM=FB,LRECL=80,DSORG=PS,BLKSIZE=3120)            00630001
+//SYSPUNCH DD  DUMMY                                                    00650004
+//SYSPRINT  DD SYSOUT=*                                                 00733006
+//SYSUT1   DD  UNIT=SYSDA,SPACE=(CYL,(20))                              00700001
+//SYSUT2   DD  UNIT=SYSDA,SPACE=(CYL,(20))                              00710001
+//SYSUT3   DD  UNIT=SYSDA,SPACE=(CYL,(20))                              00720001
+//*                                                                     00730001
+//*===================================================================          
+//*        COPY OBJECT TO .OBJLIB DATA SET                                      
+//*===================================================================          
+//OBJCOPY  EXEC PGM=IEBGENER                                                    
+//SYSPRINT DD   DUMMY                                                           
+//SYSUT1   DD   DSN=&&SYSLIN,DISP=(OLD,DELETE)                                  
+//SYSUT2   DD   DISP=SHR,DSN=CAIEDUC.NDVR.OBJLIB(&MEMBER)                       
+//SYSIN    DD   DUMMY                                                           
+//*******************************************************************           
+//*         EXEC LINKEDIT                                                       
+//*******************************************************************           
+//LINK     EXEC PGM=IEWL,COND=(16,LT),                                  00731002
+//         PARM='LIST,XREF,SIZE(768K,48K)'                                      
+//*       PARM='AMODE=ANY,RMODE=24,LIST,XREF,SIZE(768K,48K)'             732002 
+//SYSLIB   DD  DSN=CAIEDUC.NDVR.V180GA.CSIQOPTN,DISP=SHR                00580002
+//         DD  DSN=SYS1.MACLIB,DISP=SHR                                 00737002
+//OBJLIB   DD  DISP=SHR,DSN=CAIEDUC.NDVR.OBJLIB(&MEMBER)                        
+//INCLIB   DD  DISP=SHR,DSN=CAIEDUC.NDVR.LNKLIB                                 
+//SYSPRINT DD  SYSOUT=*                                                 00733006
+//SYSUT1   DD  UNIT=SYSDA,SPACE=(CYL,(5,3))                             00734002
+//SYSLMOD  DD DSN=CAIEDUC.NDVR.LOADLIB(&MEMBER),DISP=SHR                        
+//SYSLIN   DD *                                                         00739002
+  INCLUDE OBJLIB(LSTEPLIB)                                                      
+  ENTRY LSTEPLIB                                                                
+  SETOPT PARM(AC=1,REUS(RENT))                                                  
+  NAME LSTEPLIB(R)                                                              
+//*                                                                             
+//*******************************************************************           
+// PEND                                                                         
+//STEP7 EXEC ASMPGM,MEMBER=LSTEPLIB                                             
